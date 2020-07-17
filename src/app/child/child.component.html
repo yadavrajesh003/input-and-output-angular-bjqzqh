@@ -1,0 +1,11 @@
+<h2>Child component</h2>
+<p>
+  Today's item: {{item}}
+</p>
+<hr>
+
+<!-- newItem local variable that is passed to addNewItem-->
+<label>Add an item: <input #newItem></label>
+<br/><br/>
+<button (click)="addNewItem(newItem.value)">Add to parent's list</button>
+
